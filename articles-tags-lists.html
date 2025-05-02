@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="styles/w3css.css"/>
+  <link rel="stylesheet" href="styles/font-styles.css"/>
+  <link rel="stylesheet" href="styles/FA5/fa5/css/all.css"/>
+  <title>Reference Web Page</title>
+</head>
+<body>
+  
+  <div style="display:none;" class="w3-modal w3-grey">
+    <div class="w3-modal-content w3-white w3-border-black w3-bottombar w3-topbar w3-leftbar">
+      <div class="w3-container ">
+        <h1 class="w3-xlarge">Modal</h1>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ==================HEADER LOGO AREA ===================== -->
+  
+<div id="tln-main-nav-bar" style="height:fit-content;z-index:4;margin:0;display:block;" class="sticky w3-cell-row w3-black w3-large pd-sm w3-bottombar">
+    <div style="width:50%;" class="w3-container  w3-cell">
+    <h1 class="w3-large robotoB underline w3-center">THE LEADERS NEWSPAPER</h1></div>
+    <div style="width:50%;" class="w3-container w3-cell w3-padding">
+     <span style="" id='btn-open-sidebar' class="w3-btn fas fa-bars  w3-xlarge"></span>
+     <button style="" class=" TLN-grad w3-btn w3-padding w3-text-white w3-border-white w3-border w3-medium w3-round-xlarge bold">Join In</button>
+     </div>
+  </div>
+  
+  
+  <div id="SEGMENT-nav-bar-links" style="margin:0;padding:10px;" class="w3-container w3-cell-row w3-large w3-black bolder">
+  </div>
+  
+  
+  <div id="SEGMENT-display-body" style="margin:0;padding:0;">
+  </div>
+ 
+  <div id="footer-load-area" style="padding:0;margin:0;"></div>
+</body>
+  
+  <script src="scripts/JQuery.js"></script>
+  <script src="scripts/loader.js"></script>
+  <script src="scripts/searcher.js"></script>
+  <script src="scripts/ArticlePage.js"></script>
+  <script src="scripts/SEGMENT_LOADER.js"></script>
+<script>
+  $(document).ready(()=>{
+ 
+    INIT_loaderGUI();
+    
+    
+    load_SEGMENT("navbar");
+    load_SEGMENT("taglist");
+    
+    $("#footer-load-area").load("footer.html");
+    
+    
+   setTimeout(function(){
+     INIT_listTagEvent();
+   },500);
+    
+  });
+
+function INIT_listTagEvent(){
+  //get all article-list-tag elements
+  var list_tags = document.getElementsByClassName("article-list-tag");
+  
+  //iterate through each tag entry
+  for(let i = 0; i < list_tags.length; i++){
+    tag = list_tags[i];
+    
+    //set click event handler
+    tag.addEventListener("click",function(){
+      //extract data-tag attribute
+      dta = this.getAttribute("data-tag");
+      
+      
+      /////////////////////////////////////////////////
+      hideElem("articles-list-tags-display");
+      showElem("DFR-prev-display");
+      /////////////////////////////////////////////////
+      
+      //alert("List Tag Clicked: "+dta);
+      var arr = new Array(dta);
+      
+      searchArticlesBy("tag",arr,"search");
+    });
+  }
+}
+
+
+function hideElem(id){
+ document.getElementById(id).style.display = "none"; 
+}
+
+
+function showElem(id){
+ document.getElementById(id).style.display = "block"; 
+}
+
+
+
+</script>
+
+</html>

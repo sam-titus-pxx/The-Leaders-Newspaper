@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  
+  <link rel="stylesheet" href="styles/w3css.css"/>
+  <link rel="stylesheet" href="styles/FA5/fa5/css/all.css"/>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-styles.css">
+  <title>Verification Page</title>
+  </head>
+<body class="w3-flat-midnight-blue">
+  
+    
+    <div class="w3-container w3-section">
+    
+      <center>
+    <h1 class="w3-xlarge hd1"><u><b>Verify Account</b></u></h1>
+    <h2 class="mg-0 w3-large w3-text-sand shd1">
+      Verification code has been sent to the email address you provided.
+      
+    </h2>
+      </center>
+   
+      
+      <div>
+        <br><br><br>
+        <center>
+        <div style="" class="w3-section w3-cell-row w3-large">
+          <input data-key="0" style="width:20%;text-align:center;" type="number" maxlength="1" max="1"class="w3-input v-inp inp2 w3-cell">
+          <input data-key="1" style="width:20%;margin-left:5px;text-align:center;" type="number" maxlength="1" class="w3-input v-inp inp2 w3-cell">
+          <input data-key="2" style="width:20%;margin-left:5px;text-align:center;" type="number" maxlength="1" class="w3-input v-inp inp2 w3-cell">
+          <input data-key="3" false style="width:20%;margin-left:5px;text-align:center;" type="number" maxlength="1" max="1" class="w3-input v-inp inp2 w3-cell">
+        </div>
+          
+          <p class="w3-small">Input verification code here</p>
+          <br><br>
+          <p>I did not receive code<br><span class="w3-button w3-hover-white"><b class="w3-text-red">please resend</b></span></p>
+        </center>
+        
+      </div>
+    
+      
+ </div>
+    
+</body>
+  
+  <script src="scripts/JQuery.js"></script>
+  <script src="scripts/verification.js"></script>
+ 
+<script>
+  
+  $(document).ready(()=>{
+  INIT_verificationInput();
+    
+  
+    
+    $("#close-modal").click(function(){
+       document.getElementById("article-preview-modal").style.display = "none";
+    });
+   
+    
+  });
+
+
+
+
+function openModal(){
+  getElem("main-modal").style.display = "block"; 
+}
+
+function closeModal(){
+  getElem("main-modal").style.display = "none"; 
+}
+
+function getElem(id){
+  return document.getElementById(id);
+}
+
+function log(str){
+  console.log(str);
+}
+</script>
+
+</html>

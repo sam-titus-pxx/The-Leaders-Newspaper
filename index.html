@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="styles/style.css"/>
+  <link rel="stylesheet" href="styles/w3css.css"/>
+  <link rel="stylesheet" href="styles/FA5/fa5/css/all.css"/>
+  <link rel="sylesheet" href="styles/font-styles.css">
+  <link rel="stylesheet" href="scripts/OwlCarousel/dist/assets/owl.carousel.min.css" />
+  
+  <link rel="stylesheet" type="text/css" href="scripts/Slick/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="scripts/Slick/slick/slick-theme.css"/>
+
+  <title>Landing Page</title>
+</head>
+<body style="padding:0;margin:0;"> 
+  
+   <div id="main-popup-modal" style="display:none;" class="w3-modal w3-grey">
+    <div style="padding:2px;" id="main-popup-modal-content" class="w3-modal-content w3-white w3-border-black w3-card-4">
+     <span class="w3-btn fas fa-times w3-text-black w3-right" id="btn-close-main-popup"></span>
+       <div id="popup-header-div" class="w3-container header">
+        <h1 class="w3-medium header"><b class="w3-border-red w3-topbar w3-bottombar w3-xxlarge header">TLN</b><br><u class="w3-text-red">THE LEADER`S NEWSPAPER</u> 
+         <span id="popup-marker" class="w3-round-xxlarge w3-padding w3-blue-grey w3-large fas fa-exclamation w3-right"></span></h1>
+       </div><hr>
+      <div id="popup-body-div" class="w3-container w3-section w3-medium header"></div>
+      <div style="height:100px;" id"popup-footer-div" class="w3-container w3-flat-midnight-blue"></div>
+    </div>
+  </div>
+  
+<!--------------------------------------------------------------------->
+<!--------------------(0): SPLASH DISPLAY AREA---------------------------------------------->
+
+  <div style="display:none;width:100vw;height:100vh;padding:0;margin:0;" class="w3-display-container TLN-section splash-carousel owl-carousel" id="splash-section">
+    <div style="height:100vh;padding:0;" class="item">
+     <img height="100%;" width="100%;" src="assets/global-network.jpg">
+      <div style="padding:0;" class="w3-border-red w3-leftbar w3-display-left">
+       <h1 style="line-height:35px;" class="w3-xlarge w3-text-white freshman">THE<br>LEADERS<br>NEWSPAPER</h1>
+        <span class="w3-white jersey">Nigeria • Africa • The World!</span>
+      </div>
+      <div style="padding:0;" class="w3-display-bottommiddle">
+       <h1 class="w3-topbar w3-leftbar w3-bottombar w3-xlarge w3-text-white header">T.L.N <span class="w3-small fa-stack"><i class="fas fa-circle fa-stack-2x"></i><span class="w3-text-black bold fas fa-search fa-stack-1x fa-inverse"></span></span></h1>
+      </div>
+     </div>
+    
+    <div style="height:100vh;" class="item">
+     <img height="100%;" width="100%;" src="assets/visual-contents.jpg">
+      <div class="w3-display-bottomleft ">
+        <h1 style="line-height:30px;" class="HSSN w3-border-white w3-leftbar w3-xlarge w3-bottombar w3-text-sand">Global News And Headline Events At Your Finger Tips</h1>
+      </div>
+      <div style="padding:0;" class="w3-display-topright">
+       <h1 class=" w3-border-red w3-topbar w3-leftbar w3-bottombar w3-xlarge w3-text-white header">T.L.N <span class="w3-text-white w3-small fa-stack"><i class="fas fa-circle fa-stack-2x"></i><span class="w3-text-black bold fas fa-search fa-stack-1x fa-inverse"></span></span></h1>
+      </div>
+     </div>
+    
+     <div style="height:100vh;" class="item">
+     <img height="100%;" width="100%;" src="assets/lens3.jpg">
+      <div class="w3-display-right ">
+        <h1 style="line-height:40px;" class="HSSN w3-border-white w3-leftbar w3-xlarge w3-bottombar w3-text-black pd-sm">National<br>Politics<br>Security<br>Economy<br>And More !</h1>
+      </div>
+      <div style="padding:0;" class="w3-display-topright">
+       <h1 class="w3-text-black w3-border-red w3-topbar w3-leftbar w3-bottombar w3-xlarge w3-text-white header">T.L.N <span class="w3-text-white w3-small fa-stack"><i class="fas fa-circle fa-stack-2x"></i><span class="w3-text-black bold fas fa-search fa-stack-1x fa-inverse"></span></span></h1>
+      </div>
+     </div>
+    
+    <div style="height:100vh;" class="item">
+     <img height="100%;" width="100%;" src="assets/journalist2.jpg" class="w3-grayscale-max">
+      <div class="w3-display-bottomleft ">
+        <h1 class="HSSN w3-border-white w3-leftbar w3-xxlarge w3-text-sand">On The Scene<br>Investigative Reporting</h1>
+      </div>
+     <div style="padding:0;" class="w3-border-red w3-display-topright">
+       <h1 class="w3-border-red w3-topbar w3-leftbar w3-bottombar w3-xlarge w3-text-white header">T.L.N<span class="w3-small fa-stack"><i class="fas fa-circle fa-stack-2x"></i><span class="w3-text-black bold fas fa-search fa-stack-1x fa-inverse"></span></span></h1>
+      </div>
+     </div>
+    
+    <div style="height:100vh;" class="item lake">
+      <div class="w3-display-left pd-bg w3-topbar w3-bottombar">
+        <h1 style="line-height:42px;" id="header" style="" class="cinzelBD bold w3-xlarge w3-text-white">
+         Keep track on all the latest important events in current affairs as they break around the nation and the world
+        </h1>
+      </div>
+     <div style="padding:0;" class="w3-display-topleft">
+       <h1 class="w3?--border-red w3-topbar w3-leftbar w3-bottombar w3-xlarge w3-text-white header">T.L.N<span class="w3-small fa-stack"><i class="fas fa-circle fa-stack-2x"></i><span class="w3-text-black bold fas fa-search fa-stack-1x fa-inverse"></span></span></h1>
+      </div>
+       <div style="padding:0;" class="w3-display-bottomright">
+        <button type="button" id="btn-enter" onclick="enter_trigger()" class="w3-btn w3-border-teal w3-topbar w3-leftbar w3-bottombar w3-large w3-text-white header">Proceed <span class="fas fa-arrow-right"></span></button>
+      </div>
+     </div>
+    
+  </div>
+  
+<!--------------------------------------------------------------------->
+<!-------------------------(1): SEARCH RESULTS DISPLAY -------------------------------------------->
+
+  <div id="page-search-display" style="display:none;" class="w3-container TLN-section">
+    <h1 class="w3-xlarge w3-text-blue-grey">Search News Articles...</h1>
+    
+     <div id="info-alert" class="w3-panel w3-medium bold info warning" style="height:50px;padding:0;padding-left:10px;display:none;">
+      <span onclick='hideInfoAlert()' class="w3-btn w3-right fas fa-times-circle"></span>
+      <p class="w3-medium w3-padding-12" id="info-alert-text"></p>
+     </div>
+    
+    <input style="height:50px;" id="inp-search-bar" class="w3-section w3-input inp w3-hover-sand section" style="" type="search" placeholder="search..." />
+    <br>
+    <div class="w3-bar" id="selected-searches-box"></div>
+    <button style="display:none;" id="btn-search-matches" class="w3-btn w3-small w3-right w3-round-large w3-flat-midnight-blue">search</button>
+    <div id="search-matches-box" class="w3-container w3-card-4 w3-bar"></div>
+
+  </div>
+  
+  
+  
+<!--------------------------------------------------------------------->
+<!----------------------(2): MAIN INDEX DISPLAY----------------------------------------->
+ 
+<div style="padding:0;margin:0;display:block;" id="main-section" class="w3-container TLN-section">
+  
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+    
+  <div style="display:none;" id="sidebar-hoist-area"></div>
+
+  <div id="tln-main-nav-bar" style="height:fit-content;z-index:4;margin:0;display:block;" class="sticky w3-cell-row w3-black w3-large pd-sm">
+    <div style="width:50%;" class="w3-container w3-cell">
+    <h1 class="w3-large robotoB underline w3-center">THE LEADERS NEWSPAPER</h1></div>
+    <div style="width:50%;" class="w3-container w3-cell w3-padding">
+     <span style="" id='btn-open-sidebar' class="w3-btn fas fa-bars  w3-xlarge"></span>
+     <button style="" class=" w3-flat-midnight-l TLN-grad w3-btn w3-padding w3-text-white w3-border-blue w3-border w3-medium w3-round-xlarge bold">Join In</button>
+     </div>
+  </div>
+    
+  <!--------------- Sidebar ---------------->
+  
+  
+  
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+  <!--
+  <div style="padding:5px;margin:0;height:fit-content;width:100%;" class="w3-container w3-card w3-cell-row primary">
+   <img style="height:100px;width:200px;margin:0;" src="assets/tln_main.png">
+ </div>
+    -->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+  <div style="" class="w3-cell-row w3-border-white w3-topbar w3-black">
+    <!--  <h1 id="header" style="" class="cinzelBD bold w3-large w3-text-orange">
+      Keep track of all the latest important events in current affairs as they break around the nation and the world<br> <span class="w3-small w3-right underline w3-text-amber">- The Leaders News</span>
+    </h1>  -->
+    
+    <div class="w3-container w3-small w3-padding-24 w3-bar w3-border-white w3-topbar SSB bold">
+      <button data-href="news" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge  w3-text-white w3-bar-item">News</button> 
+      <button data-href="headline" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge  w3-text-white w3-bar-item">Headlines</button> 
+      <button data-href="politics" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge w3-text-white w3-bar-item">Politics</button> 
+      <button data-href="sport" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge w3-text-white w3-bar-item">Sports</button>
+      <button data-href="finance" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge w3-text-white w3-bar-item">Finance</button> 
+      <button data-href="tech" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge w3-text-white w3-bar-item">ICT Tech</button> 
+      <button data-href="current affairs" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge w3-text-white w3-bar-item">Foreign Affairs</button> 
+      <button data-href="education" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge  w3-text-white w3-bar-item">Education</button> 
+      <button data-href="health" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge  w3-text-white w3-bar-item">Health</button> 
+      <button data-href="agriculture" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge  w3-text-white w3-bar-item">Agriculture</button> 
+      <button data-href="security" data-action-type="search" class="btn-tag-route w3-btn mg-sm w3-border-white w3-border w3-round-xlarge  w3-text-white w3-bar-item">Security</button> 
+    </div>
+    
+    <!------ Search Input Box----->
+    <div class="w3-container w3-padding w3-xlarge w3-bar w3-border-white w3-topbar w3-section w3-white">
+      
+      <input style="width:80%;" id="inp-search-article" type="search" class="w3-bar-item w3-input w3-border-blue" placeholder="Search...">
+      
+    <span id="btn-search-article" class="w3-xxlarge fas fa-search w3-btn"></span>
+      
+    </div>
+    
+  </div>
+   
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+    
+  
+    
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+  
+ <div style="margin:0;padding:0;" class="w3-container w3-panel w3-card-4 w3-section w3-border-black w3-topbar w3-bottombar">
+    <h2 class="header banner-headline w3-padding w3-xlarge">Headlines</h2>
+    <div style="margin:0;padding:5px 0;height:300px;" id="tln-main-headline-display" class="w3-container headline-carousel owl-carousel"></div>
+  </div>
+  <br>
+  
+  <!-- ======== CALL TO ACTION ======== -->
+   <div class="w3-container w3-center">
+    <div style="height:fit-content;"class="TLN-bg-dark w3-container w3-border w3-round-large w3-card-4">
+      <div class="w3-container">
+      <h1 class="w3-large bold robotoB w3-right w3-section underline">THE LEADERS™</h1></div>
+     
+      <h1 class="w3-large  bold w3-text-teal "><span class="w3-white pd-sm w3-round-large w3-center ">Get Exclusive Access</span></h1>
+      <h1 class="w3-small josefine">Get exclusive access to all news articles and insightful, up-to-date contents and analysis</h1>
+      <h1 class="w3-small">Sign Up To The Membership Platform Now !</h1><hr>
+      
+      <div class="w3-container w3-center josefin bold">
+        <button style="width:50%;" class=" w3-btn w3-bar-item TLN-bg-light w3-round-xlarge">Sign Up</button>
+        <button class="w3-section w3-btn w3-bar-item w3-white TLN-text-dark w3-round-xlarge">Login To Account</button>
+      </div>
+    </div>
+  </div>
+  <!-- ============================== -->
+  <br><br>
+  
+  
+  <div id="" style="margin:0;padding:0;display:block;" class="w3-container w3-section w3-card-4 w3-section w3-border-black">
+    <h2 class="header w3-black w3-padding w3-xlarge">News Feed</h2>
+    <div id="tln-main-feed-display" class=""></div>
+  </div>
+  
+  
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->  
+  
+  <div style="display:none;" class="w3-display-container w3-bar-block fix-bl w3-right">
+    <div id="output" style="padding:2px;height:fit-content;width:fit-content;" class="w3-bar-item mg-sm w3-white w3-small w3-border"></div>
+data-action-type="search"     <button id="btn-pos" class=" w3-border-white w3-border mg-sm w3-btn w3-small w3-flat-midnight-blue w3-round-xlarge"><i class="fas fa-caret-up"></i>&nbsp Top</button>
+  </div>
+  
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+  
+  <div style="height:fit-content;padding:0;" class="pd-tny w3-section w3-card-4 w3-border-blue-grey w3-border w3-round-large">
+    <div style="padding:0;"class="w3-display-container w3-text-white">
+     <img src="assets/photographer.jpg" alt="Lights" style="width:100%" class="w3-grayscale-max">
+     <div class="w3-large w3-display-bottomleft">
+      <center>
+       <h2 class="pd-bg w3-round-xlarge header w3-text-cream"><u>Become A Local Reporter</u></h2>
+        <h1 class="w3-large bold ">Report on issues and local events happening in your community</h1>
+       <button style="width:90%;" class="w3-white w3-small mg-bg w3-btn w3-round-xlarge w3-border-red w3-border bold TLN-texf-dark">Register Now</button>
+      </center>
+      </div>
+    </div>
+  </div>
+ 
+  <!--------------------- --------------------------------+--+++-->
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+  
+  <div id="footer-load-area" style="padding:0;"class=""></div>
+
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+  
+  <div class="" id="DFR-holding-div" style="display:none;"></div>
+  
+<!--------------------------------------------------------------------->
+<!--------------------------------------------------------------------->
+
+</div>
+  
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/main.js"></script>
+ 
+</body>
+</html>

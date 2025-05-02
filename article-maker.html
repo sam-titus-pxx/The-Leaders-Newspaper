@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  
+  <link rel="stylesheet" href="styles/w3css.css"/>
+  <link rel="stylesheet" href="styles/FA5/fa5/css/all.css"/>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-styles.css">
+  </head>
+<body>
+  
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------- -->
+  
+
+    <div style="top:30;z-index:10;display:none;" id="util-modal" class="w3-modal ">
+    <div style="padding:10px;" class="w3-modal-content primary w3-panel w3-card-4">
+      <span onclick="closeUtilModal()" id="btn-close-modal" class="w3-btn fas fa-times w3-right"></span>
+      <div id="slide-up-modal-content" class="w3-container w3-border-grey w3-border">
+        <h1 class="w3-xlarge header"><u>Ref Link Formatter</u></h1>
+         Enter Link Title Text and URL 
+        <input type="text" id="prompt-title" class="w3-input w3-section" placeholder="title text...">
+        <input type="text" id="prompt-link" class="w3-input w3-section" placeholder="link">
+        <button id="btn-prompt-submit" style="padding:5px;" class="w3-btn w3-round-small w3-small w3-blue w3-right">Pass Link</button>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div id="article-preview-modal" style="display:none;width:100vw;" class="w3-modal w3-grey">
+    <div style="height:fit-content;width:95%;" class="w3-modal-content primary w3-border-black w3-bottombar w3-topbar w3-leftbar w3-rightbar">
+      
+      <span id="close-modal" class="w3-white fas fa-times w3-btn w3-right"></span>  
+    </div>
+  </div>
+  
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------- -->
+  
+    
+  
+    
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------- -->
+
+     <div id="article-preview-display" style="height:fit-content;width:100%;padding:0;display:none;"class="AM-section w3-container w3-card-4 w3-white">
+       
+      <div class="sticky w3-white w3-container mg-btm w3-xlarge w3-bottombar">
+        <span onclick="showSectionDisplay(1);" class="w3-button w3-border pd-sm mg-sm w3-left fas fa-arrow-left"></span>
+        <h1 class="w3-xlarge header underline">Article Preview Modal</h1>
+      </div>
+       
+        <br>
+        <div id="new-article-html" class="w3-container primary cinzel">
+         <h2 style="text-decoration:underline;" id="preview-article-title" class="w3-xlarge cinzelBD"></h2>
+         <span id="preview-article-author" class="w3-tiny art-meta SSB"></span>  <br>
+         <span id="preview-article-date" class="w3-tiny art-meta SSB"></span>
+          <br>
+         <p class="text w3-small SSB">Tags&nbsp<i class="fas fa-tags"></i>: <span id="preview-article-tags"></span></p>
+         <p class="text w3-small SSB">Keywords&nbsp<i class="fas fa-key"></i>: <span id="preview-article-keywords"></span></p>
+        </div> 
+        <img style="height:190px;width:100%;" id="preview-article-cover-image" src="assets/photos/horizon.jpg">
+        <br>
+        <p id="preview-article-content" class="w3-small SSB"></p>
+        <div style="padding:0;" id="preview-article-subcontent"></div>
+        <br><hr>
+       <div class="w3-container w3-padding primary">  
+        <button id="btn-article-submit-confirm" type="button" class="w3-btn w3-border-white w3-border secondary w3-text-amber w3-right btn">Submit</button>
+      </div>
+     </div>
+    
+<!-- -----------------------x----------------------------------------------------- -->
+<!-- --------------ugh£~-------------------------------------------------------------- -->
+ 
+  <div id="article-form-display" class="AM-section" style="padding:0;margin:0;">
+    
+    <div style="height:fit-content;width:100%;padding:0;" class="display-container">
+      <img class="" style="height:100%;width:100%;" src="assets/global-network.jpg" alt="">
+      <div style="padding:10px;" class="w3-container w3-xlarge header w3-text-white w3-display-topright">
+        <h1 style='margin-right:10px;' class="w3-xlarge"><b class="w3-border-red w3-topbar w3-bottombar ">TLN</b></h1>
+      </div>
+    </div>
+    
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------- -->
+    
+    <h2 class="w3-section robotoB TLN-text-dark w3-xxlarge cinzelBD"><center><b>Create Article</b></center></h2>
+    <form class="w3-panel w3-cream w3-border w3-padding w3-card-4 w3-topbar">
+      
+      <label class="bold TLN-text-dark w3-large">Title</label> 
+      <input id="inp-article-title" type="text" class="w3-input   TLN-border w3-leftbar portland bold w3-card" placeholder="Article Title">
+      <hr>
+      
+      <label class="bold TLN-text-dark w3-large">Author</label> 
+      <input id="inp-article-author" type="text" class="w3-input TLN-border w3-leftbar portland bold w3-card " placeholder="Article Title">
+      <hr>
+      
+      <label class="bold TLN-text-dark w3-large">Intro</label> 
+      <input id="inp-article-intro" type="text" class="w3-input TLN-border w3-leftbar portland bold w3-card " placeholder="Article Intro">
+      <hr>
+      
+      <label class="bold TLN-text-dark w3-large">Cover Image</label>
+      <input id="inp-article-cover" type="text" class="w3-input TLN-border w3-leftbar portland bold w3-card " placeholder="Article Cover Image">
+      <br><hr>
+      
+      <label class="bold TLN-text-dark w3-large">Keywords</label>
+      <input id="inp-article-keywords" type="text" class="w3-input TLN-border w3-leftbar portland bold w3-card " placeholder="Article Keywords">
+      <br>
+      
+      <label class="bold TLN-text-dark w3-large">Content</label>
+      <textarea id="inp-article-content" rows="10" cols="10" class="w3-input TLN-border w3-leftbar portland bold w3-card" placeholder="Article content..."></textarea>
+      <hr>
+      
+
+      <div class="w3-panel">
+      <span class="bold TLN-text-dark w3-large underline">Tags: </span>
+      <button type="button" id="btn-add-tag" class="w3-btn pd-sm w3-tiny w3-right TLN-bg-dark" data-status="unclicked"><i class="fas fa-plus"></i></button>
+      </div>
+      <div id="selected-tags-hoist" class="w3-container w3-bar"></div>
+      <div style="display:none;" id="tags-hoist" class="w3-container primary w3-border w3-section"></div>
+      
+      <br>
+          
+      <div class="w3-panel w3-section"> 
+        <span class="TLN-text-dark bold underline">Sub Content:&nbsp <span class="w3-tag TLN-bg-dark" id="subs-created-counter">0</span></span> 
+      <button type="button" id="btn-add-subcontent" class="w3-btn pd-sm w3-tiny w3-right TLN-bg-dark" data-status="unclicked"><i class="fas fa-plus"></i></button>
+      </div>
+      
+      
+      <div style="padding:0;" id="sub-content-hoist" class="w3-panel w3-bar"></div>
+      
+      <div style="display:none;padding:0;" id="sub-creater-hoist" class="w3-container w3-section"></div>
+      <br>
+
+      <div class="w3-container w3-section w3-topbar pd-sm">
+       <button type="button" id="btn-article-preview" class="w3-btn w3-card w3-right TLN-bg-light">Preview</button>
+      </div>
+      
+      <br>
+      
+    </form>
+  </div>
+<!-- ----------------------------------------------------------------------------- -->
+<!-- ----------------------------------------------------------------------------- -->
+
+      
+</body>
+  
+  <script src="scripts/JQuery.js"></script>
+  <script src="scripts/TLN_db.js"></script>
+  <script src="scripts/ArticleCreater.js"></script>
+  <script src="scripts/TagOn.js"></script>
+<script>
+  
+
+
+
+
+</script>
+
+</html>

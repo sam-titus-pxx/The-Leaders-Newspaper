@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  
+  <link rel="stylesheet" href="styles/w3css.css"/>
+  <link rel="stylesheet" href="styles/FA5/fa5/css/all.css"/>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/font-styles.css">
+  
+  <title>Sign Up Page</title>  
+</head>
+<body>
+  
+  
+  
+  <div id="tln-signup-modal" style="display:none;" class="w3-modal w3-grey">
+    <div style="height:fit-content;width:10vw;" class="w3-modal-content w3-flat-midnight-blue w3-border-black w3-bottombar w3-rightbar w3-topbar w3-leftbar">
+      <span id="close-signup-modal" class="w3-white fa fa-times-circle w3-btn w3-right"></span>  
+      <div id="modal-content" style="height:fit-content;width:100%;padding:0;"class="w3-container w3-card-4 w3-white">
+    
+      </div>
+    </div>
+  </div>
+  
+  <!-- =============================================================== -->
+  <!-- =============================================================== -->
+  
+  <div style="padding:0; "class="w3-container">
+    
+    <div style="height:fit-content;width:100%;padding:0;" class="w3-display-container">
+      <img class="" style="height:100%;width:100%;" src="assets/global-network.jpg" alt="">
+      <div class="w3-container w3-xlarge header w3-text-white w3-display-topright">
+       <h1 style='margin-right:10px;' class="w3-xlarge"><b class="w3-border-red w3-topbar w3-bottombar ">TLN</b></h1>
+       </div>
+    </div>
+    
+    <div class="w3-container w3-section">
+    <h2 class="mg-0 w3-xlarge bold">
+      Welcome To <b class="w3-text-red">The Leaders™</b>
+    </h2>
+    <h2 class="mg-0 w3-text-grey w3-medium w3-small bold poppinsB">
+      sign up for an account to get started
+    </h2>
+    </div>
+    <br>
+    
+    <div id="form-alert" class="w3-panel w3-medium bold w3-green w3-red" style="height:60px;display:none;">
+      <span onclick='hideFormAlert()' class="w3-btn w3-right fas fa-times-circle"></span>
+      <p class="w3-medium w3-padding-12" id="form-alert-text"></p>
+    </div>
+    
+    <div class="w3-panel w3-padding w3-card-4 ">
+      
+      <label class="bold TLN-text-dark">Email/Phone</label> 
+      <input id="inp-signup-emailphone" type="email" class="signup-inp-field w3-input inp2 art-inp w3-hover-border-blue ">
+      <br>
+      <label class="bold TLN-text-dark">Password</label>
+      <input id="inp-signup-password" type="password" class="signup-inp-field w3-input inp2 art-inp w3-hover-border-blue ">
+      <br>
+      <label class="bold TLN-text-dark">Comfirm Password</label> 
+      <input id="inp-signup-password-confirm" type="password" class="signup-inp-field w3-input inp2 art-inp w3-hover-border-blue ">
+      <br>
+             
+      <center>
+      <button style="width:65%;" id="btn-user-signup" class="w3-btn TLN-bg-dark w3-text-white w3-section text pd-bg">Sign Up</button>
+        <p class="w3-text-blue-grey w3-small">Already a member of <b>The Leaders™</b>? <a href="#" class="w3-text-red link">Login</a></p>  
+      </center>
+      
+ </div>
+    
+</body>
+  
+  <script src="scripts/JQuery.js"></script>
+  <script src="scripts/main.js"></script>
+  <script src="scripts/UserSignup.js"></script>
+<script>
+
+  
+</script>
+
+</html>
